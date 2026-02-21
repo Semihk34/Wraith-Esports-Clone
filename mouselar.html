@@ -1,0 +1,331 @@
+  <!DOCTYPE html>
+  <html lang="tr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouselar - White Esports</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      /* Kayan yazı animasyonu */
+      @keyframes ticker {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+      }
+
+      .bg-wraith-purple { background-color: #5c2e91 !important; }
+
+      body { background-color: #f0f0f3; color: #000; }
+
+      .ticker-wrapper { position: relative; overflow: hidden; white-space: nowrap; }
+      .ticker { display: inline-block; animation: ticker 20s linear infinite; }
+
+      hr { border-top: 2px solid #5c2e91; width: 80px; }
+
+    
+
+    .product-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* kartlar arasına boşluk */
+    
+  }
+      .product-card img {
+        width: 243px;
+        margin: 0 auto;
+        height: 260px;
+        object-fit: cover;
+        display: block;
+        border-radius: 14px 14px 0 0;
+        transition: transform 0.3s ease;
+      }
+
+      .product-card:hover img {
+        transform: scale(1.05);
+      }
+
+      /* Yazı alt kısımda beyaz alanda */
+      .product-card p {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: 600;
+    width: 243px;
+    min-height: 80px;
+    background-color: #fff;
+  }
+
+      /* Buton resmin üzerinde sağ alt köşede */
+      .card-content {
+        position: relative;
+        flex-grow: 1;
+      }
+
+      .card-content button {
+        position: absolute;
+        bottom: -5px;
+        right: 15px;
+        width: 40%;
+        height: 34px;
+        font-size: 1.0rem;
+        border: none;
+        border-radius: 6px;
+        background-color: #5c2e91;
+        color: #fff;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      .card-content button:hover {
+        background-color: #7a3fc7;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- 1. Üst bar (sürekli kayan yazı) -->
+  <section id="anasayfa">
+  <div class="bg-wraith-purple text-white py-2" style="overflow: hidden; white-space: nowrap;">
+    <div style="display: inline-block; animation: ticker 20s linear infinite;">
+      <span style="margin-right: 400px;">2199₺ ve üzeri siparişlerde ücretsiz kargo</span>
+      <span style="margin-right: 400px;">Tüm ürünler stoklarla sınırlıdır</span>
+      <span style="margin-right: 300px;">Yeni ürünler haftalık olarak eklenir</span>
+    </div>
+  </div>
+  </section>
+
+    <!-- 2. Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <div class="container">
+      <a class="navbar-brand fw-bolder d-flex flex-column" href="index.html">
+    <span style="color:#eeff00; letter-spacing:2px; line-height:1;">
+      WHITE<span style="color:#d400ff;">.</span>
+    </span>
+
+    <span style="
+      display:inline-block;
+      height:1.5px;
+      width:65px;
+      background:#d400ff;
+      margin-top:2px;
+    "></span>
+  </a>
+
+  </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Anasayfa</a></li>
+            <li class="nav-item"><a class="nav-link" href="hakkımızda.html">Hakkımızda</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Kategoriler</a>
+              <ul class="dropdown-menu p-3">
+                <li><strong>Mouse</strong></li>
+                <li><a class="dropdown-item" href="#tum-mouselar">Tüm Mouselar</a></li>
+                <li><a class="dropdown-item" href="#magnezyum">Magnezyum Mouselar</a></li>
+                <li><a class="dropdown-item" href="#karbonfiber">Karbonfiber Mouselar</a></li>
+                <li><strong>Klavye</strong></li>
+                <li><a class="dropdown-item" href="klavyeler.html">Tüm Klavyeler</a></li>
+                <li><a class="dropdown-item" href="klavyeler.html#mekanik-klavyeler">Mekanik Klavyeler</a></li>
+                <li><a class="dropdown-item" href="klavyeler.html#manyetik-klavyeler">Manyetik Klavyeler</a></li>
+                <li><strong>Mousepad</strong></li>
+                <li><a class="dropdown-item" href="mousepad.html">Tüm Mousepadler</a></li>
+                <li><a class="dropdown-item" href="mousepad.html#cam-mousepadler">Cam Mousepad</a></li>
+                <li><a class="dropdown-item" href="mousepad.html#poron-mousepadler">Poron Mousepad</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                  Markalar
+              </a>
+              <ul class="dropdown-menu p-3">
+                  <li>
+                      <div class="row">
+                          <div class="col-12">
+                              <h6 class="dropdown-header"><strong>Markalar</strong></h6>
+                              <a class="dropdown-item" href="#">Whıte</a>
+                              <a class="dropdown-item" href="#">ATK</a>
+                              <a class="dropdown-item" href="#">Finalmouse</a>
+                              <a class="dropdown-item" href="#">WlMouse</a>
+                              <a class="dropdown-item" href="#">Pwnage</a>
+                              <a class="dropdown-item" href="#">Vancer</a>
+                              <a class="dropdown-item" href="#">Ninjutso</a>
+                              <a class="dropdown-item" href="#">Hitscan</a>
+                              <a class="dropdown-item" href="#">Yunzii</a>
+                              <a class="dropdown-item" href="#">KBDfans</a>
+                              <a class="dropdown-item" href="#">FGG Madlions</a>
+                              <a class="dropdown-item" href="#">IQUNİX</a>
+                              <a class="dropdown-item" href="#">ESPTiger</a>
+                              <a class="dropdown-item" href="#">Padsmith</a>
+                              <a class="dropdown-item" href="#">Midori</a>
+                              <a class="dropdown-item" href="#">Freefall</a>
+                              <a class="dropdown-item" href="#">Wallhack</a>
+                              <a class="dropdown-item" href="#">AvusGear</a>
+              </ul>
+            </li>
+            <a class="nav-link" href="index.html#iletisim">İletişim</a>
+          </ul>
+          <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item dropdown">
+      <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 1.5rem;">🔍</a>
+      <ul class="dropdown-menu p-2" style="min-width: 200px;">
+        <li>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn" style="background-color:#5c2e91; color:white;">🔍</button>
+          </form>
+        </li>
+      </ul>
+    </li>
+      <a class="nav-link" href="#" style="font-size: 1.5rem;">👤</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" style="font-size: 1.5rem;">🛒</a>
+    </li>
+  </ul>
+        </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sayfa İçeriği -->
+    <div class="container py-5">
+      <h2 class="text-center fw-bold mb-3">Mouselar</h2>
+      <hr class="mx-auto mb-5">
+
+      <!-- Tüm Mouselar -->
+      <div class="product-row mb-2 ">
+        <div class="product-card ">
+          <div class="card-content">
+            <img src="Resimler/Resimler/white-mouse.jpg" alt="">
+            <button>Sepete Ekle</button>
+          </div>
+          <p>White W1 Wireless Mouse</p>
+        </div>
+
+        <div class="product-card">
+          <div class="card-content">
+            <img src="Resimler/Resimler/bblmouse.jpg" alt="">
+            <button>Sepete Ekle</button>
+          </div>
+          <p>WLmouse Beast X Pro[Bbl Edition]Mouse</p>
+        </div>
+        <div class="product-card">
+          <div class="card-content">
+            <img src="Resimler/Resimler/WLmouse_Sword_X_siyah.jpg" alt="">
+            <button>Sepete Ekle</button>
+          </div>
+          <p>WLmouse Sword X Wireless Mouse</p>
+        </div>
+
+        <div class="product-card">
+          <div class="card-content">
+            <img src="Resimler/Resimler/frostlord-mini.jpg" alt="">
+            <button>Sepete Ekle</button>
+          </div>
+          <p>FinalmouseULX Frostlord KarbonFiber Mouse</p>
+        </div>
+
+        <div class="product-card">
+          <div class="card-content">
+            <img src="Resimler/Resimler/Pwnage.jpg" alt="">
+            <button>Sepete Ekle</button>
+          </div>
+          <p>Pwnage Trinity Karbon Fiber Wireless Mouse</p>
+        </div>
+
+        <div class="product-card">
+          <div class="card-content">
+            <img src="Resimler/Resimler/Vancer_AKITSU.jpg" alt="">
+            <button>Sepete Ekle</button>
+          </div>
+          <p>Vancer AKITSU 8K Karbon Fiber Wireless Mouse</p>
+        </div>
+
+        <div class="product-card">
+          <div class="card-content">
+            <img src="Resimler/Resimler/atka9beyaz.jpg" alt="">
+            <button>Sepete Ekle</button>
+          </div>
+          <p>ATK Dragonfly A9 Mouse</p>
+        </div>
+        <div class="product-card">
+          <div class="card-content">
+            <img src="Resimler/Resimler/ATKskyx1.jpg" alt="">
+            <button>Sepete Ekle</button>
+          </div>
+          <p>ATK Blazing Sky X1 Mouse</p>
+        </div>
+
+        <div class="product-card">
+          <div class="card-content">
+            <img src="Resimler/Resimler/Hitscan_Hyperlight_siyah.jpg" alt="">
+            <button>Sepete Ekle</button>
+          </div>
+          <p>Hitscan Hyperlight Wireless Mouse</p>
+        </div>
+
+        <div class="product-card">
+          <div class="card-content">
+            <img src="Resimler/Resimler/Ninjutso_Sora_V2_beyaz.jpg" alt="">
+            <button>Sepete Ekle</button>
+          </div>
+          <p>Ninjutso Sora V2 Wireless Mouse</p>
+        </div>
+      </div>
+
+      <!-- Karbonfiber -->
+      <h2 id="karbonfiber" class="text-center fw-bold mb-3">Karbonfiber Mouselar</h2>
+      <hr class="mx-auto mb-5">
+      <div class="product-row mb-5">
+      
+        <div class="product-card">
+          <div class="card-content">
+            <img src="Resimler/Resimler/frostlord-mini.jpg" alt="">
+            <button>Sepete Ekle</button>
+          </div>
+          <p>FinalmouseULX Frostlord KarbonFiber Mouse</p>
+        </div>
+        <div class="product-card">
+          <div class="card-content">
+            <img src="Resimler/Resimler/Pwnage.jpg" alt="">
+            <button>Sepete Ekle</button>
+          </div>
+          <p>Pwnage Trinity Karbon Fiber Wireless Mouse</p>
+        </div>
+        <div class="product-card">
+          <div class="card-content">
+            <img src="Resimler/Resimler/Vancer_AKITSU.jpg" alt="">
+            <button>Sepete Ekle</button>
+          </div>
+          <p>Vancer AKITSU 8K Karbon Fiber Wireless Mouse</p>
+        </div>
+      </div>
+
+      <!-- Magnezyum -->
+    <h2 id="magnezyum" class="text-center fw-bold mb-3">Magnezyum Mouselar</h2>
+    <hr class="mx-auto mb-5">
+    <div class="product-row">
+        <div class="product-card">
+          <div class="card-content">
+            <img src="Resimler/Resimler/bblmouse.jpg" alt="">
+            <button>Sepete Ekle</button>
+          </div>
+          <p>WLmouse Beast X Pro[Bbl Edition]Mouse</p>
+        </div>
+        <div class="product-card">
+          <div class="card-content">
+            <img src="Resimler/Resimler/WLmouse_Sword_X_siyah.jpg" alt="">
+            <button>Sepete Ekle</button>
+          </div>
+          <p>WLmouse Sword X Wireless Mouse</p>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+  </html>

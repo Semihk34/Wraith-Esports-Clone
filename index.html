@@ -1,0 +1,349 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>White Esports</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <style>
+  @keyframes ticker {
+    0%   { transform: translateX(100%); }  /* Sağdan başla */
+    100% { transform: translateX(-100%); } /* Sola kay */
+  }
+
+
+      .bg-wraith-purple { background-color: #5c2e91 !important; }
+      
+      /* Kayan yazı (sürekli) */
+      .ticker-wrapper {
+        position: relative;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+
+      .ticker {
+        display: inline-block;
+        position: top;
+        will-change: transform;
+        animation: ticker 15s linear infinite; 
+      }
+      
+  /* Tüm footer küçük resimler hover */
+  .footer-img img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .footer-img img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+    cursor: pointer;
+  }
+
+
+  </style>
+  </head>
+  <body>
+    
+  <!-- 1. Üst bar (sürekli kayan yazı) -->
+  <section id="anasayfa">
+  <div class="bg-wraith-purple text-white py-2" style="overflow: hidden; white-space: nowrap;">
+    <div style="display: inline-block; animation: ticker 20s linear infinite;">
+      <span style="margin-right: 400px;">2199₺ ve üzeri siparişlerde ücretsiz kargo</span>
+      <span style="margin-right: 400px;">Tüm ürünler stoklarla sınırlıdır</span>
+      <span style="margin-right: 300px;">Yeni ürünler haftalık olarak eklenir</span>
+    </div>
+  </div>
+  </section>
+  <!-- 2. Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <div class="container">
+      <a class="navbar-brand fw-bolder d-flex flex-column" href="index.html">
+    <span style="color:#eeff00; letter-spacing:2px; line-height:1;">
+      WHITE<span style="color:#d400ff;">.</span>
+    </span>
+
+    <span style="
+      display:inline-block;
+      height:1.5px;
+      width:65px;
+      background:#d400ff;
+      margin-top:2px;
+    "></span>
+  </a>
+
+  </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Anasayfa</a></li>
+          <li class="nav-item">
+          <a class="nav-link" href="hakkımızda.html">Hakkımızda</a>
+
+      </li>
+          </li>
+          
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Kategoriler</a>
+              <ul class="dropdown-menu p-3">
+                  <li>
+                      <div class="row">
+                          </div>
+                          <div class="col-12">
+                              <h6 class="dropdown-header"><strong>Mouse</strong></h6>
+                              <a class="dropdown-item" href="mouselar.html">Tüm Mouselar</a>
+                              <a href="mouselar.html#magnezyum" class="dropdown-item">Magnezyum Mouselar</a>
+                              <a href="mouselar.html#karbonfiber" class="dropdown-item">Karbonfiber Mouselar</a>
+                              <div class="col-12">
+                              <h6 class="dropdown-header"><strong>Klavye</strong></h6>
+                              <a class="dropdown-item" href="klavyeler.html">Tüm Klavyeler</a>
+                              <a class="dropdown-item" href="klavyeler.html#mekanik-klavyeler">Mekanik Klavyeler</a>
+                              <a class="dropdown-item" href="klavyeler.html#manyetik-klavyeler">Manyetik Klavyeler</a>
+                            <div class="col-12">
+                              <h6 class="dropdown-header"><strong>Mousepad</strong></h6>
+                              <a class="dropdown-item" href="mousepad.html">Tüm Mousepadler</a>
+                              <a class="dropdown-item" href="mousepad.html#cam-mousepadler">Cam Mousepad</a>
+                              <a class="dropdown-item" href="mousepad.html#cam-mousepadler">Poron Mousepad</a> 
+                      </div>
+                      </div>
+                  </li>
+              </ul>
+              
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                  Markalar
+              </a>
+              <ul class="dropdown-menu p-3">
+                  <li>
+                      <div class="row">
+                          <div class="col-12">
+                              <h6 class="dropdown-header"><strong>Markalar</strong></h6>
+                              <a class="dropdown-item" href="#">Whıte</a>
+                              <a class="dropdown-item" href="#">ATK</a>
+                              <a class="dropdown-item" href="#">Finalmouse</a>
+                              <a class="dropdown-item" href="#">WlMouse</a>
+                              <a class="dropdown-item" href="#">Pwnage</a>
+                              <a class="dropdown-item" href="#">Vancer</a>
+                              <a class="dropdown-item" href="#">Ninjutso</a>
+                              <a class="dropdown-item" href="#">Hitscan</a>
+                              <a class="dropdown-item" href="#">Yunzii</a>
+                              <a class="dropdown-item" href="#">KBDfans</a>
+                              <a class="dropdown-item" href="#">FGG Madlions</a>
+                              <a class="dropdown-item" href="#">IQUNİX</a>
+                              <a class="dropdown-item" href="#">ESPTiger</a>
+                              <a class="dropdown-item" href="#">Padsmith</a>
+                              <a class="dropdown-item" href="#">Midori</a>
+                              <a class="dropdown-item" href="#">Freefall</a>
+                              <a class="dropdown-item" href="#">Wallhack</a>
+                              <a class="dropdown-item" href="#">AvusGear</a>
+                      </div>
+                  </li>
+              </ul>
+              
+          </li>
+          
+          <a class="nav-link no-style" href="#iletisim">İletişim</a>
+
+
+
+        </ul>
+        <ul class="navbar-nav ms-auto align-items-center">
+    <li class="nav-item dropdown">
+      <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 1.5rem;">🔍</a>
+      <ul class="dropdown-menu p-2" style="min-width: 200px;">
+        <li>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn" style="background-color:#5c2e91; color:white;">🔍</button>
+          </form>
+        </li>
+      </ul>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="#" style="font-size: 1.5rem;">👤</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" style="font-size: 1.5rem;">🛒</a>
+    </li>
+  </ul>
+
+      </div>
+    </div>
+    
+    
+  </nav>
+  <div class="container mt-5">
+      
+    <h2 class="text-center mb-4">Ürün Sergisi</h2>
+
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+  <div class="container mt-5 p-4" style="
+      background: linear-gradient(135deg, #5c2e91, #000);
+      border-radius: 15px;
+  ">
+    
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- slider -->
+    
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Resimler/Resimler/finalmouse.png" alt="finalmouse" class="d-block mx-auto rounded" style="max-height:350px; width:auto; object-fit:contain;">
+      </div>
+      <div class="carousel-item">
+        <img src="Resimler/Resimler/wlmouse.jpg" alt="wlmouse" class="d-block mx-auto rounded">
+      </div>
+      <div class="carousel-item">
+        <img src="Resimler/Resimler/ATK.jpg" alt="atk" class="d-block mx-auto rounded" style="min-height:350px; width:auto; min-width: none; object-fit:contain;" >
+      </div>
+      
+    </div>
+
+    <!-- sağ ve sol simge -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+
+    <!-- Alt küçük resimler -->
+    <div class="row justify-content-center footer-img mt-4">
+  <div class="col-2 text-center">
+    <a href="mouselar.html" class="text-decoration-none text-dark">
+      <img src="Resimler/Resimler/mouse.jpg" class="img-fluid rounded mb-2" alt="Mouse">
+      <p>Mouse</p>
+    </a>
+  </div>
+
+  <div class="col-2 text-center">
+    <a href="klavyeler.html" class="text-decoration-none text-dark">
+      <img src="Resimler/Resimler/klavye.jpg" class="img-fluid rounded mb-2" alt="Klavye">
+      <p>Klavye</p>
+    </a>
+  </div>
+
+  <div class="col-2 text-center">
+    <a href="mousepad.html" class="text-decoration-none text-dark">
+      <img src="Resimler/Resimler/mousepad.jpg" class="img-fluid rounded mb-2" alt="Mousepad">
+      <p>Mousepad</p>
+    </a>
+  </div>
+</div>
+
+
+      
+      
+      </div>
+    </div>
+  </div>
+
+  <section class="container my-5">
+    <h3 class="text-center fw-bold mb-4">Sıkça Sorulan Sorular</h3>
+
+    <div class="accordion" id="faqAccordion">
+
+      <!-- Soru 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button"
+          style="background-color: #5c2e91 !important; color: white !important;"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq1">
+            Siparişlerim kaç günde kargoya verilir?
+          </button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse "
+            data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Siparişleriniz 1-3 iş günü içerisinde kargoya teslim edilir.
+          </div>
+        </div>
+      </div>
+
+      <!-- Soru 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button"
+          style="background-color: #5c2e91 !important; color: white !important;"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq2">
+            Elime kusurlu bir ürün geçti,ne yapmalıyım?
+          </button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse"
+            data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Eğer satın aldığınız ürünün kusurlu olduğuna inanıyorsanız, ürünün fotoğraflarını ve kısa tanımını destek@whiteesports.com adresine e-posta olarak gönderirseniz size kısa zamanda yardımcı olunacaktır..
+          </div>
+        </div>
+      </div>
+
+      <!-- Soru 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button"
+          style="background-color: #5c2e91 !important; color: white !important;"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq3">
+            İade ve değişim yapabilir miyim?
+          </button>
+        </h2>
+        <div id="faq3" class="accordion-collapse collapse"
+            data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Ürünleri 14 gün içerisinde iade veya değişim yapabilirsiniz.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer id="iletisim" class="bg-dark text-light pt-5 pb-3 mt-5">
+    <div class="container">
+      <div class="row">
+        <!-- Hakkımızda kısaca footer içinde de olabilir -->
+        <div id="hakkimizda" class="col-md-4 text-start mb-4">
+    <h5 class="fw-bold">White Esports</h5>
+    <p class="text-secondary">White Esports, rekabetçi oyuncular için
+      yüksek performanslı ekipmanlar sunan
+      bir esports markasıdır.</p>
+  </div>
+
+        <div class="col-md-4 mx-auto text-center mb-4">
+          <h6 class="fw-bold">Hızlı Linkler</h6>
+          <ul class="list-unstyled">
+            <li><a href="#anasayfa" class="text-secondary text-decoration-none">Ana Sayfa</a></li>
+            <li><a href="#hakkimizda" class="text-secondary text-decoration-none">Hakkımızda</a></li>
+            <li><a href="#faq" class="text-secondary text-decoration-none">SSS</a></li>
+            <li><a href="#iletisim" class="text-secondary text-decoration-none">İletişim</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mx-auto text-end mb-4">
+          <h6 class="fw-bold">İletişim</h6>
+          <p class="text-secondary mb-2">📧 info@whiteesports.com</p>
+          <p class="text-secondary mb-2">📞 +90 5XX XXX XX XX</p>
+          <p class="text-secondary">📍 Türkiye</p>
+        </div>
+      </div>
+      <hr class="border-secondary">
+      <div class="text-center text-secondary">© 2025 White Esports — Tüm hakları saklıdır.</div>
+    </div>
+  </footer>
+
+
+
+  </body>
+  </html>
